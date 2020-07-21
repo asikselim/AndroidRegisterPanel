@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <include
+        layout="@layout/actionbar_app"
+        android:id="@+id/actionbarregister" />
+
+    <TextView
+        android:id="@+id/txtinfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createnewacount"
+        android:layout_below="@+id/actionbarregister"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/txtinfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:layout_below="@+id/txtinfo1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtinfo2"
+        android:hint="@string/username"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/txtinfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_below="@+id/txtusername"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtinfo3"
+        android:hint="@string/email"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/txtinfo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:layout_below="@+id/txtemail"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtinfo4"
+        android:hint="@string/password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btncreateaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createnewacount"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>

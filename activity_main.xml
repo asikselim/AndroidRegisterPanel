@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/livechatlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+
+        />
+
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/redButton"
+        android:text="@string/singIn"
+        android:layout_above="@+id/newaccount"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/newaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="@string/createnewacount"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+
+        />
+
+
+</RelativeLayout>
